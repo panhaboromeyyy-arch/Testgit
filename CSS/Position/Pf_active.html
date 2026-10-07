@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pf_Active</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .profile-control {
+        width: 500px;
+        height: 500px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: white;
+        margin: 30px auto;
+        border-radius: 10px;
+        padding: 100px 100px;     
+    }
+    .profile {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        border-radius: 50%;
+    }
+    .profile img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .online {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: green;
+        position: absolute;
+        right: 30px;
+        bottom: 20px;
+        border-radius: 50%;
+        border: 3px solid white;
+    }
+</style>
+<body>
+    <div class="profile-control">
+        <div class="profile">
+            <div class="online"></div>
+            <img src="https://i.pinimg.com/736x/da/e7/d6/dae7d6ab8e2abd3e74d776a5fd49a6cb.jpg" alt="profile img">
+        </div>
+    </div>
+</body>
+</html>

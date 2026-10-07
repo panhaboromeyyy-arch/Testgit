@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .parent {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+      grid-gap: 10px;
+      width: 90%;
+      margin: auto;
+    }
+
+    .parent div {
+      border: 3px solid black;
+      color: #310036;
+      font-size: 20px;
+      text-align: center;
+      padding: 20px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .child1 {
+      background-color: #9c27b0; /* Purple header */
+      color: white;
+      grid-column: 1 / -1; /* span all columns */
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+
+    .child20 {
+      grid-column: 1 / -1;
+      background-color: #9c27b0; /* Purple header */
+      color: white;
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+
+    .child2 {
+      background-color: #9c27b0;
+      color: white;
+      grid-row: span 2;
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+
+    .child3 {
+      background-color: #9c27b0;
+      color: white;
+      grid-row: span 2;
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+
+    .child4, .child5, .child6, .child7 {
+      background-color: #9c27b0;
+      color: white;
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+
+    .child8 {
+      background-color: #f8bbd0; /* Soft Pink body */
+      grid-row: span 2;
+    }
+
+    .child14, .child15, .child9 {
+      background-color: #f8bbd0;
+      grid-row: span 2;
+    }
+
+    .child10, .child12, .child16, .child18, .child19, .child17, .child13, .child11 {
+      background-color: #f8bbd0;
+    }
+
+    .parent div img {
+      max-width: 80px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child1">C1</div>
+    <div class="child2">C2</div>
+    <div class="child3">C3</div>
+    <div class="child4">C4</div>
+    <div class="child5">C5</div>
+    <div class="child6">C6</div>
+    <div class="child7">C7</div>
+    <div class="child8">C8</div>
+    <div class="child9">C9</div>
+    <div class="child10">C10</div>
+    <div class="child11">C11</div>
+    <div class="child12">C12</div>
+    <div class="child13">C13</div>
+
+    <!-- Item 2 -->
+    <div class="child14">C14</div>
+    <div class="child15">C15</div>
+    <div class="child16">C16</div>
+    <div class="child17">C17</div>
+    <div class="child18">C18</div>
+    <div class="child19">C19</div>
+
+    <div class="child20">C20</div>
+  </div>
+</body>
+</html>
